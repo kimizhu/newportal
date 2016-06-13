@@ -6,34 +6,37 @@
           "**/*.md"
         ],
         "exclude": [
-          "**/obj/**",
-          "newportal/**"
-        ],
-        "src": null,
-        "dest": null
+          "**/obj/**"
+        ]
       }
     ],
     "resource": [
-      {
-        "files": [
+        {
+          "files": [
+          "**/images/**", 
           "**/*.png",
-          "**/*.jpg"
-        ],
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.bmp",
+          "_themes/**"
+          ],
         "exclude": [
           "**/obj/**",
-          "newportal/**"
-        ],
-        "src": null,
-        "dest": null
+          "_themes/DocPacker/**"
+        ]
       }
     ],
-    "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {},
-    "fileMetadata": {},
-    "template": [
-      "op.html"
-    ],
-    "dest": "newportal"
-  }
+    "dest": "ATADocs",
+    "template": "docs.html",
+    "globalMetadata": {
+      "layout": "Conceptual",
+      "breadcrumb_path": "",
+      "ms.locale": "en-us"
+    }
+  },
+  "render": {
+    "theme": "hyde",
+    "dest": "_output"
+  },
+  "basepath": "/ATA"
 }
